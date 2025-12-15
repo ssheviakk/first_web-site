@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu"  id="menu">
+        <div class="menu-top">
+            <img src="/images/Logo.png" alt="">
+            <a href="#" class="exit-button"></a>
+        </div>
+
+        <div class="menu-bottom">
+            <nav>
+                <a href="#header" class="nav-link">HOME</a>
+                <a href="#recommended" class="nav-link">RECOMMENDED</a>
+                <a href="#category" class="nav-link">CATEGORIES</a>
+                <a href="#benefits" class="nav-link">HOW TO BUY</a>
+            </nav>
+        </div>
+
+    </div>
+    <header id="header">
+        <div class="header-top">
+            <img src="/images/Logo.png" alt="Bose">
+
+            <a href="#menu" class="menu-button"></a>
+        </div>
+        <div class="header-bottom">
+            <img src="/images/Sound-waves.png" alt="">
+            <h1>The world shades.<br>Your music shines.</h1>
+        </div>
+    </header>
+    <main>
+        <section id="recommended">
+            <h2 class="recommended-title">Recommended</h2>
+                <div class="products">
+                    <article class="product">
+                        <img src="/images/Recomended-1.png" alt="Bose portable Smart speaker">
+                        <h3 class="product-title">Bose portable Smart speaker</h3>
+                        <p class="product-description">Smart home</p>
+                        <p class="product-price">$ 399.0</p>
+                        <button class="buy-button">BUY</button>
+                    </article>
+
+                    <article class="product">
+                        <img src="/images/Recomended-2.png" alt="SoundLink Flex Bluetooth speaker">
+                        <h3 class="product-title">SoundLink Flex Bluetooth speaker</h3>
+                        <p class="product-description">Portable bluetooth</p>
+                        <p class="product-price">$ 149.00</p>
+                        <button class="buy-button">BUY</button>
+                    </article>
+
+                    <article class="product">
+                        <img src="/images/Recomended-3.png" alt="SoundLink Color Bluetooth speaker II">
+                        <h3 class="product-title">SoundLink Color Bluetooth speaker II</h3>
+                        <p class="product-description">Portable bluetooth</p>
+                        <p class="product-price">$ 129.0</p>
+                        <button class="buy-button">BUY</button>
+                    </article>
+                </div>
+        </section>
+
+
+        <section id="category">
+            <h2 class="categories-title">
+                Browse Bose<br>products by category
+            </h2>
+            <article class="category">
+                <div>
+                    <img class="photo-wide" src="/images/earbuds.png" alt="Headphones & earbuds">
+                    <img class="photo-square" src="/images/headphones.png" alt="Headphones & earbuds">
+                </div>
+                <h3 class="categories-description">
+                    Headphones & earbuds
+                </h3>
+            </article>
+
+            <article class="category">
+                <div>
+                    <img class="photo-wide" src="/images/speaker-2.png" alt="Speakers">
+                    <img class="photo-square" src="/images/speaker-1.png" alt="Speakers">
+                </div>
+                <h3 class="categories-description">
+                    Speakers
+                </h3>
+            </article>
+
+            <article class="category">
+                <div>
+                    <img class="photo-square" src="/images/audio-sunglasses-1.png" alt="Audio sunglasses">
+                    <img class="photo-wide" src="/images/audio-sunglasses-2.png" alt="Audio sunglasses">
+                </div>
+                <h3 class="categories-description">
+                    Audio sunglasses
+                </h3 class="categories-description">
+            </article>
+
+        </section>
+
+        <section class="benefits" id="benefits">
+            <h2 class="benefits-title">
+                Why buy direct<br>from Bose
+            </h2>
+            <div class="benefits-content">
+                <ul class="benefit-list">
+                    <li>Free 2-day shipping and returns</li>
+                    <li>90-day risk-free trial</li>
+                    <li>World class customer service</li>
+                    <li>My Bose account management</li>
+                </ul>
+                <p class="benefits-description">
+                    A great product is more than what’s in the box. It’s a promise
+                    of premium performance, world-class support, and everything you expect from a trusted brand. It’s just one of 
+                    many reasons why you’ll shop with confidence on Bose.com.
+                </p>
+            </div>
+        </section>
+
+        <div class="contact-section">
+        <h2>Contact Us</h2>
+
+        <form>
+            <label for="name">Ваше ім’я:</label>
+            <input id="name" type="text" placeholder="Введіть ім’я" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input id="email" type="email" placeholder="Введіть email" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+            
+            <label for="products">Select one</label>
+            <div class="last--label">
+            <input class="select--buttons" type="radio" name="radiobutton"> Headphones 
+            <input class="select--buttons" type="radio" name="radiobutton"> Speakers
+          
+            </div>
+            
+            <div class="checkbox">
+              <label for="policy">Accept policy</label>
+              <input type="checkbox" class="checkbox">
+            </div>
+
+
+            
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>  
+
+    </main>
+    <footer>
+      <video class="footer--video" autoplay plays-inline loop muted src="/images/footer-video.mp4"></video>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #292929;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms ;
+  background-color: #E8EFF9;
+  padding: 64px 120px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.menu:target {
+  transform: translateX(0%);
+}
+
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-bottom {
+  display: inline-block;
+}
+
+.menu-bottom nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  letter-spacing: 2px;
+
+}
+
+.menu-bottom nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.menu-top a {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-image: url(/images/Icon-Close.png);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 64px 120px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url(/images/Head-photo-image-1.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.menu-button {
+  height: 24px;
+  width: 24px;
+  display: block;
+  background-image: url(/images/Icon-Burger-menu.png);
+}
+
+.menu-button:hover {
+  background-image: url(/images/Icon-Burger-menu-hover.png);
+}
+
+h1 {
+  margin: 0;
+  margin-top: 40px;
+  font-weight: 800;
+  font-style: Italic;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+
+main {
+  padding: 120px;
+  background-color: white;
+}
+
+.recommended-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 64px 120px;
+}
+
+.product-title {
+  font-weight: 700;
+  margin: 0;
+  margin-top: 32px;
+}
+
+.product-description {
+  margin: 0;
+  margin-top: 8px;
+}
+
+
+.product-price {
+  font-weight: 700;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.buy-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: solid;
+  color: black;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.buy-button:hover {
+  background-color: black;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.product-photo {
+  width: 100%;
+}
+
+.categories-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  margin: 0;
+  margin-top: 120px;
+}
+
+.category {
+  margin: 0;
+  margin-top: 64px;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-wide {
+  width: 66%;
+}
+
+.photo-square {
+  width: 32%;
+}
+
+.categories-description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.benefits-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 120px;
+}
+
+.benefits-description {
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.benefit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-section {
+    max-width: 500px;
+    margin-top: 100px;
+    margin: 60px auto;
+    padding: 40px;
+    padding-right: 70px;
+    background: #1a1b1d;
+    border-radius: 12px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.last--label {
+  display: flex;
+  color: #fff;
+  max-width: 200px;
+  gap: 30px;
+}
+
+.select--buttons {
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.checkbox label {
+  width: 200px;
+}
+
+.checkbox input {
+  width: 50px;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 4px rgba(0,118,255,0.4);
+}
+
+.contact-section button {
+    width: 100%;
+    padding: 14px;
+    background: #21262b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.contact-section button:hover {
+    background: #005fd4;
+}
+
+footer {
+  height: 460px;
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  background-image: url(/images/Footer.png);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.footer--video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
