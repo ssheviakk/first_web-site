@@ -63,7 +63,7 @@ nav {
   display: block;
   height: 24px;
   width: 24px;
-  background-image: url(/images/Icon-Close.png);
+  background-image: url(Icon-Close.png);
 }
 
 header {
@@ -73,7 +73,7 @@ header {
   padding: 64px 120px;
   height: 100vh;
   box-sizing: border-box;
-  background-image: url(/images/Head-photo-image-1.png);
+  background-image: url(Head-photo-image-1.png);
   background-size: cover;
   background-position: top center;
 }
@@ -88,11 +88,11 @@ header {
   height: 24px;
   width: 24px;
   display: block;
-  background-image: url(/images/Icon-Burger-menu.png);
+  background-image: url(Icon-Burger-menu.png);
 }
 
 .menu-button:hover {
-  background-image: url(/images/Icon-Burger-menu-hover.png);
+  background-image: url(Icon-Burger-menu-hover.png);
 }
 
 h1 {
@@ -321,7 +321,7 @@ footer {
   box-sizing: border-box;
   object-fit: cover;
   width: 100%;
-  background-image: url(/images/Footer.png);
+  background-image: url(Footer.png);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -337,4 +337,5 @@ footer {
   object-fit: cover;
   width: 100%;
   height: 100%;
+
 }
